@@ -5,12 +5,14 @@ import { Store } from "./pages/Store";
 import { About } from "./pages/About";
 import { Navbar } from "./components/Navbar";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import ColNav from "./components/ColNav";
 
 function App() {
   return (
     <>
       <ShoppingCartProvider>
         <Navbar />
+        <ColNav />
         <Container className="mb-4">
           <Routes>
             <Route path="/" element={<Home />} />

@@ -1,0 +1,60 @@
+/* .video-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+} */
+.video-container {
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.nike-symbol {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 500px; /* Adjust size as needed */
+  height: 500px; /* Adjust size as needed */
+  background-image: url("https://www.freeiconspng.com/uploads/nike-transparent-logos-background-12.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fade-in {
+  animation: fade-in-animation 2s ease-in forwards;
+}
+
+.fade-out {
+  animation: fade-out-animation 2s ease-out forwards;
+}
+
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fade-out-animation {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* 
+.nike-symbol.show {
+  opacity: 1;
+} */
