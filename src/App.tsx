@@ -3,16 +3,15 @@ import { Container } from "react-bootstrap";
 import { Home } from "./pages/Home";
 import { Store } from "./pages/Store";
 import { About } from "./pages/About";
-import { Navbar } from "./components/Navbar";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
-import ColNav from "./components/ColNav";
+// import ColNav from "./components/ColNav";
+import Navx from "./components/Navx";
 
 function App() {
   return (
     <>
       <ShoppingCartProvider>
-        <Navbar />
-        <ColNav />
+        <Navx />
         <Container className="mb-4">
           <Routes>
             <Route path="/" element={<Home />} />

@@ -1,4 +1,3 @@
-import Carol from "../components/Carol";
 import Video from "../components/Video";
 
 export function Home() {
@@ -6,7 +5,6 @@ export function Home() {
     <>
       <div>
         <Video />
-        <Carol />
       </div>
     </>
   );
